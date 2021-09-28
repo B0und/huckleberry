@@ -1,3 +1,17 @@
+:root {
+  --primary-green: hsl(160deg, 100%, 30%);
+  --secondary-gold-lighter: hsl(45deg, 100%, 50%);
+  --secondary-gold-darker: hsl(45deg, 100%, 40%);
+
+  /* Grays: */
+  --black-gray: hsl(0deg, 0%, 0%);
+  --very-dark-gray: hsl(0deg, 0%, 10%);
+  --dark-gray: hsl(0deg, 0%, 30%);
+  --medium-gray: hsl(0deg, 0%, 40%);
+  --light-gray: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -7,6 +21,39 @@ html,
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Add styles here! */
+
+.max-width-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+header {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  border-bottom: 10px solid var(--medium-gray);
+}
+
+.title {
+  font-size: 2rem;
+  /* padding-top: 128px; */
+  /* margin-top: 20px; */
+  margin-bottom: 32px;
+}
+
+strong {
+  color: var(--primary-green);
+}
+
+.intro-chunk {
+  max-width: 350px;
+}
+
+.intro-chunk p {
+  font-size: 1.25rem;
+}
