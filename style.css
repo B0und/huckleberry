@@ -19,15 +19,15 @@
 
 html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--light-gray);
 }
 
-/* Add styles here! */
-
 .max-width-wrapper {
-  max-width: 700px;
+  max-width: 650px;
   margin: 0 auto;
   padding: 0 32px;
 }
@@ -37,12 +37,12 @@ header {
   padding-top: 100px;
   padding-bottom: 50px;
   border-bottom: 10px solid var(--medium-gray);
+  background-color: white;
 }
 
 .title {
   font-size: 2rem;
-  /* padding-top: 128px; */
-  /* margin-top: 20px; */
+  font-weight: bold;
   margin-bottom: 32px;
 }
 
@@ -55,5 +55,37 @@ strong {
 }
 
 .intro-chunk p {
+  color: var(--very-dark-gray);
   font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+
+main {
+  background-color: var(--light-gray);
+}
+
+.card {
+  background-color: var(--white);
+  padding: 16px;
+  margin: -16px;
+  margin-top: 0;
+  margin-top: 100px;
+  border-bottom: 10px solid var(--medium-gray);
+}
+
+.indented-heading {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: var(--secondary-gold-lighter);
+  padding: 16px 32px;
+  margin-top: -10px;
+  margin-left: -36px;
+  border-bottom: 6px solid var(--secondary-gold-darker);
+
+}
+
+.card p {
+  line-height: 1.5;
 }
